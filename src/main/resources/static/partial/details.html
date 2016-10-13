@@ -1,0 +1,48 @@
+
+ <div style="width: 357; 
+         height: 50; 
+         font-size: 40pt; 
+         font-family: Arial Black; 
+         color: black; 
+         Filter: Blur(Add = 1, Direction = 225, Strength = 10)"> <h1 style="text-align:center;">Employees List</h1></div>
+        <!--<h2>Employee Details</h2> <span style="float:right"><a href="#/create">Create Employee</a></span>-->
+         <table style="width:100%">
+            <thead>
+                <tr>
+                    
+                    <th>EmpID</th>
+                    <th>EmpName</th>
+                    <th>Designation</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="Employee in Employees">
+                    <td>{{Employee.id}}</td>
+                    <td>{{Employee.empname}}</td>
+                    <td>{{Employee.designation}}</td>
+                    <td>{{Employee.email}}</td>
+                    <td>{{Employee.phone}}</td>
+                    <td>{{Employee.address}}</td>
+                    <td>
+                   
+					<button class="btn btn-warning" onClick="location.href='#/update'" title="Edit">
+					<span class="glyphicon glyphicon-edit"></span>
+					</button>
+	
+					</td>
+					<td>
+					
+					<button class="btn btn-danger" ng-click="deleteEmployee(Employee.id)" type="button" title="Delete">
+					 <span class="glyphicon glyphicon-trash"></span></button>
+ 					
+					</td>
+                </tr>
+            </tbody>
+        </table> 
+      
+    </div>
