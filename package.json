@@ -31,9 +31,12 @@
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
     "test-single-run": "karma start karma.conf.js --single-run",
+    
+    "install": "./node_modules/protractor/bin/webdriver-manager update",
+      "test": "grunt test"
 
-    "preupdate-webdriver": "npm install",
-    "update-webdriver": "webdriver-manager --proxy http://10.100.1.124:3128 update",
+   // "preupdate-webdriver": "npm install",
+    //"update-webdriver": "webdriver-manager --proxy http://10.100.1.124:3128 update",
 
     "preprotractor": "npm run update-webdriver",
     "protractor": "protractor e2e-tests/protractor.conf.js",
