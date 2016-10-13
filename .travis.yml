@@ -4,6 +4,7 @@ dist: trusty
 language: node_js
 node_js:
   - '4.5'
+ before_install: npm install -g protractor@1.0.0 mocha@1.18.2
 
 install:
   - export DISPLAY=:99.0
@@ -16,6 +17,7 @@ install:
   
 before_script:
   - npm install
+  - webdriver-manager start &
 
 script:
   - npm run test-single-run
