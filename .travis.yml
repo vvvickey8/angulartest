@@ -4,7 +4,7 @@ dist: trusty
 language: node_js
 node_js:
   - '4.5'
- before_install: npm install -g protractor@1.0.0 mocha@1.18.2
+ 
 
 install:
   - export DISPLAY=:99.0
@@ -13,7 +13,7 @@ install:
   - sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
   - sudo apt-get update -q
   - sudo apt-get install -q google-chrome-stable
-  - sudo webdriver-manager update --standalone
+  - webdriver-manager update --standalone
   
 before_script:
   - npm install
