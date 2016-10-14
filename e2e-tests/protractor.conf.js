@@ -15,7 +15,7 @@ seleniumAddress: 'http://localhost:4444/wd/hub',
   ],
 
   capabilities: {
-    'browserName': 'firefox'
+    'browserName': 'chrome'
   },
 
   baseUrl: 'http://localhost:8000/',
