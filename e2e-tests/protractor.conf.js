@@ -11,23 +11,35 @@ exports.config = {
   allScriptsTimeout: 11000,
 
 //seleniumAddress: 'http://localhost:4444/wd/hub',
-  specs: [ '*.js'
-  ],
+  //specs: [ '*.js'
+  //],
 
-  capabilities: {
-    'browserName': 'chrome'
-  },
+  //capabilities: {
+    //'browserName': 'chrome'
+  //},
 
-  baseUrl: 'http://localhost:/8000',
+ // baseUrl: 'http://localhost:/8000',
 
-  framework: 'jasmine',
-  directConnect: true,
- seleniumServerJar: './node_modules/protractor/selenium/selenium-server-standalone-2.52.0.jar',
-  jasmineNodeOpts: {
-    defaultTimeoutInterval: 30000,
-     showColors: true
+  //framework: 'jasmine',
+  //directConnect: true,
+ //seleniumServerJar: './node_modules/protractor/selenium/selenium-server-standalone-2.52.0.jar',
+  //jasmineNodeOpts: {
+    //defaultTimeoutInterval: 30000,
+     //showColors: true
     
+  //},
+  seleniumAddress: 'http://localhost:4444/wd/hub',
+  specs: [' *.js'],
+  baseUrl: 'http://localhost:9001',
+  jasmineNodeOpts: {
+    showColors: true,
+    isVerbose: true,
+    realtimeFailure: true,
+    includeStackTrace: true,
+    defaultTimeoutInterval: 30000
   },
+  multiCapabilities: [{ browserName: 'firefox' }]
+};
   
  
    onPrepare: function() {
