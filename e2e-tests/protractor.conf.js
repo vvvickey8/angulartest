@@ -10,7 +10,7 @@ var reporter=new HtmlReporter({
 exports.config = {
   allScriptsTimeout: 11000,
 
-seleniumAddress: 'http://localhost:4444/wd/hub',
+//seleniumAddress: 'http://localhost:4444/wd/hub',
   specs: [ '*.js'
   ],
 
@@ -18,7 +18,7 @@ seleniumAddress: 'http://localhost:4444/wd/hub',
     'browserName': 'chrome'
   },
 
-  //baseUrl: 'http://localhost:/',
+  baseUrl: 'http://localhost:/8000',
 
   framework: 'jasmine',
   directConnect: true,
