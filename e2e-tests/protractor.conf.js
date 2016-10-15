@@ -12,14 +12,15 @@ exports.config = {
 
 //seleniumAddress: 'http://localhost:4444/wd/hub'
 seleniumServerJar: './node_modules/protractor/selenium/selenium-server-standalone-2.45.0.jar'
-  specs: [ 'movielist_spec.js'
+  specs: [ '/e2e-tests/movielist_spec.js'
   ],
 
   capabilities: {
     'browserName': 'chrome'
   },
 
-  baseUrl: 'http://localhost:/8000',
+ // baseUrl: 'http://localhost:/8000',
+    baseUrl: serverConfig.BASE_URL,
 
   framework: 'jasmine',
   directConnect: true,
