@@ -20,8 +20,8 @@ seleniumServerJar: './node_modules/protractor/selenium/selenium-server-standalon
     'browserName': 'chrome'
   },
 
- // baseUrl: 'http://localhost:/8000',
-    baseUrl: serverConfig.BASE_URL,
+ baseUrl: 'http://localhost:/8000',
+    //baseUrl: serverConfig.BASE_URL,
 
   framework: 'jasmine',
   directConnect: true,
