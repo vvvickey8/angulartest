@@ -10,7 +10,8 @@ var reporter=new HtmlReporter({
 exports.config = {
   allScriptsTimeout: 11000,
 
-seleniumAddress: 'http://localhost:4444/wd/hub',
+//seleniumAddress: 'http://localhost:4444/wd/hub'
+seleniumServerJar: './node_modules/protractor/selenium/selenium-server-standalone-2.45.0.jar'
   specs: [ '*.js'
   ],
 
