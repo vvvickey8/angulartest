@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/vvvickey8/angulartest.svg?branch=master)](https://travis-ci.org/vvvickey8/angulartest)
 # angular-seed — the seed for AngularJS apps
+[![Coverage Status](https://coveralls.io/repos/github/vvvickey8/angulartest/badge.svg?branch=master)](https://coveralls.io/github/vvvickey8/angulartest?branch=master)
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
 You can use it to quickly bootstrap your angular webapp projects and dev environment for these
