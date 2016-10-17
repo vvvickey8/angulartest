@@ -2,7 +2,7 @@
 
 /* https://github.com/angular/protractor/blob/master/docs/toc.md */
 
-describe('employeeapp', function() {
+describe('my app', function() {
 it('should automatically redirect to index page when location hash/fragment is empty', function() {
     browser.get('index.html');
     expect(browser.getLocationAbsUrl()).toMatch("/");
