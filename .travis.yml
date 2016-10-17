@@ -23,4 +23,5 @@ script:
   - npm run test-single-run
   - (npm start > /dev/null &)  && (npm run protractor)
 after_success:
-  - coveralls
+  -  make test-coveralls
+     
