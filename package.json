@@ -25,6 +25,19 @@
     "karma-htmlfile-reporter": "^0.2.2"
     
   },
+   "version": "2.11.14",
+  "bugs": {
+    "url": "https://github.com/vvvickey8/angulartest/issues"
+  },
+  "scripts": {
+    "test": "snyk test && make test"
+  },
+  "bin": {
+    "coveralls": "./bin/coveralls.js"
+  },
+  "maintainers": [
+    "Nick Merwin <vvvickey8@coveralls.io> (https://coveralls.io)"
+  ],
   "scripts": {
     "postinstall": "bower install",
 
