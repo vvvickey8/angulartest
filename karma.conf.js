@@ -48,8 +48,9 @@ module.exports = function(config) {
         './src/main/resources/static/js/employeeController.js': ['coverage']
     },
     coverageReporter: {  
-        type: 'html',
-        dir: './report/Clientside-Report/Unittest/Coverage/'
+        type: 'lcov',
+            dir: 'coverage',
+            subdir: '.'
     },
     htmlReporter: {
         outputFile: './report/Clientside-Report/Unittest/units.html',
