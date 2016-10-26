@@ -27,3 +27,11 @@ script:
 after_script:  
 - cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js && rm -rf coverage
 
+deploy:
+   edge: true
+   provider: cloudfoundry
+   username: vvvickey8@gmail.com
+   password: Suganyavicky8*
+   api: https://api.run.pivotal.io
+   organization: vvvickey8
+   space: development
