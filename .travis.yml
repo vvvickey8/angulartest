@@ -31,6 +31,8 @@ deploy:
    edge: true
    provider: cloudfoundry
    api: https://api.run.pivotal.io
+   script:
+   - cf login
    username: vvvickey8@gmail.com
    password: Suganyavicky8*
    organization: vvvickey8
