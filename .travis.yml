@@ -33,7 +33,7 @@ deploy:
    username: vvvickey8@gmail.com
    password: Suganyavicky8*
    api: https://api.run.pivotal.io
-   organization: vvvickey8
+   org: vvvickey8
    space: development
 on:
     repo: vvvickey8/angulartest
